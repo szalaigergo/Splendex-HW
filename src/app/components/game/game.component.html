@@ -1,0 +1,3 @@
+<div id="game-wrapper">
+  <div class="cards" *ngFor="let card of cards" (click)="handleCardClick(card)"><img [hidden]="!card.show" src="{{card.url}}"></div>
+</div>

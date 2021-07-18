@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Splendex-HW';
+  deckNumber: number | undefined;
+
+  startHandle($event: number) {
+    this.deckNumber = $event;
+  }
 }
