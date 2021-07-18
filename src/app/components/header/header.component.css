@@ -8,9 +8,37 @@
   font-size: 24px;
   color: white;
 }
-
+#header-wrapper div {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
 #logo {
   height: 80%;
   margin: 0 18px;
+}
+.flex-start {
+  justify-content: flex-start;
+}
+.flex-center {
+  justify-content: center;
+}
+#deck {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+}
+#deck > * {
+  margin: 0 6px;
+}
+#numbers {
+  height: 80%;
+  width: 100px;
+  text-align: center;
+  border-radius: 4px;
+}
+button {
+  background: #FF3000;
 }
 

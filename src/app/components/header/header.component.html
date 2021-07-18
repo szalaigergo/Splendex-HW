@@ -1,3 +1,24 @@
 <div id="header-wrapper">
-  <img id="logo" src="assets/images/splendex-logo.svg">
+  <div class="flex-start">
+    <img id="logo" src="assets/images/splendex-logo.svg"></div>
+  <div class="flex-center">
+    <div id="deck">
+      <!--<span>Deck size:</span>
+      <mat-form-field appearance="legacy">
+        <mat-select>
+          <mat-option *ngFor="let number of numberList" value="number">
+            {{number}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>-->
+      <label for="numbers">Deck size:</label>
+      <select id="numbers" name="numbers" [formControl]="selectedNumber">
+        <option class="options" *ngFor="let number of numberList" [value]="number">{{number}}</option>
+      </select>
+    </div>
+    <div id="start-button">
+      <button mat-button (click)="start()">START NEW GAME</button>
+    </div>
+  </div>
+  <div></div>
 </div>
